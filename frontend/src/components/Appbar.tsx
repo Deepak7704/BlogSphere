@@ -31,11 +31,6 @@ export const Appbar = () => {
             </button>
           </Link>
 
-          {/* Notifications */}
-          <button className="text-sm font-medium text-gray-600 hover:text-gray-900">
-            Notifications
-          </button>
-
           {/* Avatar */}
           <Avatar name={userName} />
 

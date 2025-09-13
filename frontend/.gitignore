@@ -32,3 +32,5 @@ out/
 *.njsproj
 *.sln
 *.sw?
+# Backend secrets
+backend/wrangler.jsonc
