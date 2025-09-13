@@ -1,0 +1,8 @@
+# wrangler.toml
+
+name = "backend"
+main = "src/index.ts"
+compatibility_date = "2025-08-15"
+
+# Your DATABASE_URL is now securely managed by Wrangler secrets
+# and does not need to be listed here.
