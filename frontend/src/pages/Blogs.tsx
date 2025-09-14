@@ -36,7 +36,7 @@ export const Blogs = () => {
                     id={blog.id}
                     key={blog.id}
                     authorName={blog.author.name || "Unknown Author"}
-                    publishedDate={new Date(blog.date).toLocaleDateString()}
+                    publishedDate={new Date(blog.createdAt).toLocaleDateString()}
                     title={blog.title || "No Title"}
                     content={blog.content || "No Content"}
                   />

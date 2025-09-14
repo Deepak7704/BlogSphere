@@ -33,10 +33,14 @@ const BlogSkeleton = () => {
 // CompleteBlog component
 interface CompleteBlogProps {
   blog: {
-    title: string;
-    content: string;
-    author: { name: string };
-    date: string;
+    content: string
+    title: string
+    id: string
+    createdAt: string
+    author: {
+        name: string
+        email: string
+    }
   };
 }
 
@@ -49,7 +53,7 @@ const CompleteBlog = ({ blog }: CompleteBlogProps) => {
         <div className="flex items-center space-x-2 text-gray-500">
           <span>By {blog.author.name}</span>
           <span>•</span>
-          <span>{new Date(blog.date).toLocaleDateString()}</span>
+          <span>{new Date(blog.createdAt).toLocaleDateString()}</span>
         </div>
         <div className="text-gray-700 leading-relaxed whitespace-pre-line">
           {blog.content}
