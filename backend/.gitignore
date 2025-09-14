@@ -33,8 +33,3 @@ lerna-debug.log*
 .DS_Store
 
 /src/generated/prisma
-
-# Wrangler config files that may contain secrets
-wrangler.toml
-*.wrangler.toml
-wrangler.jsonc
